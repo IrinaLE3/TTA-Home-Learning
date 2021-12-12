@@ -1,5 +1,4 @@
-# Task 2
-# Create a 1D array of numbers from 0 to 9
+# Create a 3×3 NumPy array of all Boolean value Trues
 
 
 import numpy as np
