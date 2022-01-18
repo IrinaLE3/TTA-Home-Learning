@@ -1,0 +1,33 @@
+K-nearest neighbours (k-NN) is a supervised learning technique used to classify new data points based on the relationship
+
+to nearby data points.
+
+ It requires data points which have been already
+
+been categorized into two clusters. Next, a new data point whose class is unknown is added to the plot.
+
+ We can predict the category of the new data
+
+point based on its relationship to existing data points.
+
+ We calculate distance from the new point to all existing points and select k nearest points.
+
+For example if k is 3, we select 3 nearest points.
+
+If 2 out of 3 nearest points belong to the same cluster (eg cluster A), we decide that the new point belong to cluster A too.
+
+ Setting k to different values (eg 3, 5 or 7) can result in different outcomes.
+
+It is therefore recommended that you test numerous k combinations to find the best fit and
+
+avoid setting k too low or too high.
+
+ Although generally a highly accurate and simple technique to learn, storing
+
+an entire dataset and calculating the distance between each new data point
+
+and all existing data points does place a heavy burden on computing
+
+resources. Thus, k-NN is generally not recommended for use with large
+
+datasets.
