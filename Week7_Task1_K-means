@@ -1,0 +1,28 @@
+K-means clustering is an unsupervised learning algorithm which attempts to divide data into k discrete groups and is effective at uncovering basic data patterns.
+
+Examples of potential groupings include animal species, customers with similar features, and housing market segmentation.
+
+The k-means clustering algorithm works by first splitting data into k number of clusters with k representing the number of clusters you wish to create. If you choose
+
+to split your dataset into three clusters then k, for example, is set to 3
+
+ 
+How does k-means clustering separate the data points? The first step is to examine the unclustered data on the scatterplot and manually select a centroid
+
+for each k cluster. That centroid then forms the epicenter of an individual cluster.
+
+The remaining data points on the scatterplot are then assigned to the closest centroid by measuring the Euclidean distance.
+
+The next step is to update each centroid by calculating the average x and y values of all data points for a cluster.
+
+After that each data point is re-visited, distance between the data point and each updated centroid is calculated and the data point is assigned to the cluster 
+
+with the closest centroid. In most cases it will be same cluster as before but some data point could switch clusters.
+
+ Should any data point switch clusters, the previous step is repeated. Once we reach a stage where the data points no longer switch clusters after
+
+an update in centroid coordinates, the algorithm is complete, and we have the final set of clusters.
+
+The K-means clustering algorithm is used to find groups which have not been explicitly labeled in the data.
+
+This can be used to confirm business assumptions about what types of groups exist or to identify unknown groups in complex data sets
