@@ -1,0 +1,70 @@
+# 1. Matrix
+
+a <- c(1,2,3,4,5)
+b <- c(10,9,8,7,6)
+c <- c(13,15,17,19,21)
+
+matr <- rbind(a,b,c)
+print(matr)
+
+matplot(matr,type="o",pch="o", xlab="X axis", ylab="Y axis")
+
+# 2 Data frames
+
+Name <- c("Anna", "Dennis", "Kate","John", "David")
+Age <-  c(40, 27, 46, 38, 54)
+Role <- c("HR","IT","Analyst","Lawyer","Director")
+Length_of_service <- c(12, 4, 15, 10, 20)
+
+frame <- data.frame(Name, Age, Role, Length_of_service)
+print(frame)
+
+# 3 Use ggplot2 and draw a graph using ggplot
+
+install.packages("ggplot2")
+library(ggplot2)
+x <- c(1:20)
+y <- x^2
+
+qplot(x, y, geom=c("point", "line"))
+
+# 4 A simple bar plot
+
+subjects <- c("Maths", "Eng", "Germ", "Geogr","Chem")
+students_number <- c(100, 125, 40, 56, 89)
+
+barplot(students_number, names.arg=subjects, main="Number of Students per Subject",
+        xlab="Subjects",ylab="Number of students", col='green', border='brown')
+
+
+#5 Take input
+
+name <- readline("Enter your name:")
+age <- readline("Enter your age:")
+
+s <- paste("Name is", name, "and age is", age)
+print(s)
+
+#6 Create a sequence of numbers and find the mean
+
+seq <- c(20:50)
+print(mean(seq))
+print(sum(seq))
+
+#7 Program to create a vector with random integer values
+
+random <- sample(-50:50,10)
+print(random)
+
+# Compulsory task
+
+install.packages("ggplot2")
+library(ggplot2)
+data(package = "ggplot2")
+?diamonds
+diamonds
+qplot(data = diamonds, x = carat, y = price, color = clarity)
+qplot(data = diamonds, x = carat, y = price, col = color)
+
+
+
